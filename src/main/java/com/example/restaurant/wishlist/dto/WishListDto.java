@@ -1,4 +1,4 @@
-package com.example.restaurant.wishlist.entity;
+package com.example.restaurant.wishlist.dto;
 
 import com.example.restaurant.db.MemoryDbEntity;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,9 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WishListEntity extends MemoryDbEntity {
+public class WishListDto {
+
+    private int index;
 
     private String title;               // 음식명, 장소명
     private String category;            // 카테고리
